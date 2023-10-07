@@ -24,6 +24,7 @@ const Navbar = () => {
                     color: isPending ? "white" : "#FFBE30",
                 };
             }}>Home</NavLink></li>
+        <li className="my-auto font-bold"><NavLink to='/allservices'>All Services</NavLink></li>
         <li className="my-auto font-bold"><NavLink to='/events'>Events</NavLink></li>
         <li className="my-auto font-bold" ><NavLink to='/gallery'>Gallery</NavLink></li>
         <li className="my-auto font-bold" ><NavLink to='/about'>About</NavLink></li>

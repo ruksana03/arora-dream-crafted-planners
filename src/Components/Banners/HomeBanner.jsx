@@ -18,7 +18,7 @@ const HomeBanner = () => {
 
 
     return (
-        <div className='absolute  z-0 top-0 w-full '>
+        <div className='w-full '>
             <Swiper
                 spaceBetween={30}
                 centeredSlides={true}
