@@ -1,0 +1,112 @@
+[
+    {
+      "id": 1,
+      "title": "Ekushey Book Fair",
+      "img": "ekushey-book-fair.jpg",
+      "ticketPrice": "Free",
+      "startTime": "10:00 AM",
+      "endTime": "8:00 PM",
+      "place": "Suhrawardy Udyan, Dhaka",
+      "language": "Bangla",
+      "description": "The Ekushey Book Fair, also known as Amar Ekushey Boi Mela, is an iconic celebration of Bengali literature. It pays tribute to the Language Movement martyrs."
+    },
+    {
+      "id": 2,
+      "title": "Pohela Boishakh Parade",
+      "img": "pohela-boishakh-parade.jpg",
+      "ticketPrice": "Free",
+      "startTime": "9:00 AM",
+      "endTime": "12:00 PM",
+      "place": "Various Cities in Bangladesh",
+      "language": "Bangla",
+      "description": "Pohela Boishakh marks the Bengali New Year, celebrated with colorful parades, traditional music, dance, and delicious food. It symbolizes unity and cultural heritage."
+    },
+    {
+      "id": 3,
+      "title": "Diwali Festival",
+      "img": "diwali-festival.jpg",
+      "ticketPrice": "Varies",
+      "startTime": "5:00 PM",
+      "endTime": "10:00 PM",
+      "place": "Various Cities Worldwide",
+      "language": "Various",
+      "description": "Diwali, the Festival of Lights, is a Hindu celebration that includes lighting oil lamps, fireworks, and sharing sweets. It promotes the triumph of light over darkness."
+    },
+    {
+      "id": 4,
+      "title": "Carnival of Venice",
+      "img": "carnival-of-venice.jpg",
+      "ticketPrice": "Varies",
+      "startTime": "10:00 AM",
+      "endTime": "8:00 PM",
+      "place": "Venice, Italy",
+      "language": "Italian",
+      "description": "The Carnival of Venice is famous for its elaborate masks, costumes, and masquerade balls. It's a celebration of Italian culture and history."
+    },
+    {
+      "id": 5,
+      "title": "Chinese New Year",
+      "img": "chinese-new-year.jpg",
+      "ticketPrice": "Free",
+      "startTime": "Varies",
+      "endTime": "Varies",
+      "place": "Various Chinatowns Worldwide",
+      "language": "Chinese",
+      "description": "Chinese New Year, also known as the Spring Festival, features dragon dances, lanterns, and delicious Chinese cuisine. It symbolizes renewal and good fortune."
+    },
+    {
+      "id": 6,
+      "title": "Carnaval do Rio de Janeiro",
+      "img": "carnaval-rio.jpg",
+      "ticketPrice": "Varies",
+      "startTime": "Varies",
+      "endTime": "Varies",
+      "place": "Rio de Janeiro, Brazil",
+      "language": "Portuguese",
+      "description": "The Rio Carnival is the world's largest carnival, known for its samba parades, vibrant costumes, and energetic music. It's a celebration of Brazilian culture."
+    },
+    {
+      "id": 7,
+      "title": "Mardi Gras",
+      "img": "mardi-gras.jpg",
+      "ticketPrice": "Varies",
+      "startTime": "Varies",
+      "endTime": "Varies",
+      "place": "New Orleans, USA",
+      "language": "English",
+      "description": "Mardi Gras in New Orleans is a lively celebration with colorful parades, jazz music, and delicious Creole cuisine. It's a unique cultural experience."
+    },
+    {
+      "id": 8,
+      "title": "Oktoberfest",
+      "img": "oktoberfest.jpg",
+      "ticketPrice": "Varies",
+      "startTime": "Varies",
+      "endTime": "Varies",
+      "place": "Munich, Germany",
+      "language": "German",
+      "description": "Oktoberfest is the world's largest beer festival, featuring traditional Bavarian music, food, and, of course, beer. It's a celebration of German culture."
+    },
+    {
+      "id": 9,
+      "title": "Cinco de Mayo",
+      "img": "cinco-de-mayo.jpg",
+      "ticketPrice": "Free",
+      "startTime": "Varies",
+      "endTime": "Varies",
+      "place": "Mexico and USA",
+      "language": "Spanish",
+      "description": "Cinco de Mayo commemorates the Mexican victory over French forces. It's celebrated with parades, music, dance, and Mexican cuisine."
+    },
+    {
+      "id": 10,
+      "title": "Songkran Festival",
+      "img": "songkran-festival.jpg",
+      "ticketPrice": "Free",
+      "startTime": "Varies",
+      "endTime": "Varies",
+      "place": "Thailand",
+      "language": "Thai",
+      "description": "Songkran is the Thai New Year's celebration, known for its water fights and traditional ceremonies. It symbolizes purification and renewal."
+    }
+  ]
