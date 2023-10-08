@@ -1,0 +1,123 @@
+[
+    {
+      "id": 1,
+      "img": "https://i.ibb.co/6rxx2xH/pexels-fu-zhichao-587741.jpg",
+      "place": "Suhrawardy Udyan, Dhaka",
+      "title": "Ekushey Book Fair",
+      "viewers": 1500,
+      "ticketSellingNumber": 350,
+      "description": "The Ekushey Book Fair, also known as Amar Ekushey Boi Mela, is an iconic celebration of Bengali literature. It pays tribute to the Language Movement martyrs.",
+      "topic": "Literature"
+    },
+    {
+      "id": 2,
+      "img": "https://i.ibb.co/6rxx2xH/pexels-fu-zhichao-587741.jpg",
+      "place": "Various Cities in Bangladesh",
+      "title": "Pohela Boishakh Parade",
+      "viewers": 2000,
+      "ticketSellingNumber": 500,
+      "description": "Pohela Boishakh marks the Bengali New Year, celebrated with colorful parades, traditional music, dance, and delicious food. It symbolizes unity and cultural heritage.",
+      "topic": "Cultural Parade"
+    },
+    {
+      "id": 3,
+      "img": "https://i.ibb.co/6rxx2xH/pexels-fu-zhichao-587741.jpg",
+      "place": "Dhaka, Bangladesh",
+      "title": "Bengali New Year Celebration",
+      "viewers": 1200,
+      "ticketSellingNumber": 300,
+      "description": "The Bengali New Year is celebrated with cultural programs, traditional rituals, and a festive atmosphere. It's a joyful occasion to welcome the new year.",
+      "topic": "Cultural Celebration"
+    },
+    {
+      "id": 4,
+      "img": "https://i.ibb.co/6rxx2xH/pexels-fu-zhichao-587741.jpg",
+      "place": "Various Cities in Bangladesh",
+      "title": "Durga Puja Festival",
+      "viewers": 1800,
+      "ticketSellingNumber": 400,
+      "description": "Durga Puja is a major Hindu festival celebrated with grand processions, idol immersion, and cultural performances. It honors the goddess Durga.",
+      "topic": "Religious Festival"
+    },
+    {
+      "id": 5,
+      "img": "https://i.ibb.co/6rxx2xH/pexels-fu-zhichao-587741.jpg",
+      "place": "National Parade Ground, Dhaka",
+      "title": "Bijoy Dibosh (Victory Day)",
+      "viewers": 900,
+      "ticketSellingNumber": 250,
+      "description": "Victory Day commemorates the victory of Bangladesh in the 1971 Liberation War. It includes a grand military parade and cultural events.",
+      "topic": "National Celebration"
+    },
+    {
+      "id": 6,
+      "img": "https://i.ibb.co/6rxx2xH/pexels-fu-zhichao-587741.jpg",
+      "place": "Rural Areas of Bangladesh",
+      "title": "Nobanno Utsab (Harvest Festival)",
+      "viewers": 800,
+      "ticketSellingNumber": 200,
+      "description": "Nobanno Utsab celebrates the harvest season with traditional rituals, folk music, dance, and feasting. It reflects rural Bengali culture.",
+      "topic": "Harvest Festival"
+    },
+    {
+      "id": 7,
+      "img": "https://i.ibb.co/6rxx2xH/pexels-fu-zhichao-587741.jpg",
+      "place": "Dhaka, Bangladesh",
+      "title": "Bengali Film Festival",
+      "viewers": 1100,
+      "ticketSellingNumber": 320,
+      "description": "The Bengali Film Festival showcases the best of Bengali cinema with film screenings, discussions, and awards. It's a treat for movie enthusiasts.",
+      "topic": "Film Festival"
+    },
+    {
+      "id": 8,
+      "img": "https://i.ibb.co/6rxx2xH/pexels-fu-zhichao-587741.jpg",
+      "place": "Dhaka, Bangladesh",
+      "title": "Dhaka International Folk Festival",
+      "viewers": 750,
+      "ticketSellingNumber": 180,
+      "description": "The Dhaka International Folk Festival features performances by folk artists from around the world, celebrating the diversity of folk music.",
+      "topic": "Music Festival"
+    },
+    {
+      "id": 9,
+      "img": "https://i.ibb.co/6rxx2xH/pexels-fu-zhichao-587741.jpg",
+      "place": "Dhaka, Bangladesh",
+      "title": "Cultural Diversity Symposium",
+      "viewers": 300,
+      "ticketSellingNumber": 90,
+      "description": "The Cultural Diversity Symposium brings together experts, artists, and cultural enthusiasts to explore the beauty of global cultural diversity.",
+      "topic": "Symposium"
+    },
+    {
+      "id": 10,
+      "img": "https://i.ibb.co/6rxx2xH/pexels-fu-zhichao-587741.jpg",
+      "place": "Various Chinatowns Worldwide",
+      "title": "Chinese New Year Celebration",
+      "viewers": 2500,
+      "ticketSellingNumber": 600,
+      "description": "Chinese New Year, also known as the Spring Festival, features dragon dances, lanterns, and delicious Chinese cuisine. It symbolizes renewal and good fortune.",
+      "topic": "Cultural Celebration"
+    },
+    {
+      "id": 11,
+      "img": "https://i.ibb.co/6rxx2xH/pexels-fu-zhichao-587741.jpg",
+      "place": "Rio de Janeiro, Brazil",
+      "title": "Carnaval do Rio de Janeiro",
+      "viewers": 3500,
+      "ticketSellingNumber": 800,
+      "description": "The Rio Carnival is the world's largest carnival, known for its samba parades, vibrant costumes, and energetic music. It's a celebration of Brazilian culture.",
+      "topic": "Carnival"
+    },
+    {
+      "id": 12,
+      "img": "https://i.ibb.co/6rxx2xH/pexels-fu-zhichao-587741.jpg",
+      "place": "New Orleans, USA",
+      "title": "Mardi Gras Festival",
+      "viewers": 2800,
+      "ticketSellingNumber": 700,
+      "description": "Mardi Gras in New Orleans is a lively celebration with colorful parades, jazz music, and delicious Creole cuisine. It's a unique cultural experience.",
+      "topic": "Festival"
+    }
+  ]
+  

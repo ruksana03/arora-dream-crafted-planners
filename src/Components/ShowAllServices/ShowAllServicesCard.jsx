@@ -1,8 +1,8 @@
 import { MdOutlineWatchLater, MdPlace } from "react-icons/md";
 import { Link } from "react-router-dom";
 
-const ServicesCard = ({ service }) => {
-    const { id, title, img, ticketPrice,date,month, startTime, endTime, place, description } = service;
+const ShowAllServicesCard = ({ service }) => {
+    const { id, title, img, ticketPrice, startTime,date,month, endTime, place, description } = service;
     console.log(service)
     return (
         <div className="flex flex-col md:flex-row lg:flex-row gap-6 bg-[#F7F7F7] hover:border-2 border-[#FFB12B] px-3 py-4">
@@ -11,7 +11,7 @@ const ServicesCard = ({ service }) => {
                 <img className="w-full" src={img} alt="" />
 
             </div>
-            <div className="my-5">
+            <div className="my-auto">
                 <h1 className="text-lg font-extrabold">{title}</h1>
                 <p className="text-lg text-[#FFBE30]">Tickets from ${ticketPrice}</p>
                 <div className="flex gap-5 items-center mt-2">
@@ -34,4 +34,4 @@ const ServicesCard = ({ service }) => {
     );
 };
 
-export default ServicesCard;
+export default ShowAllServicesCard;

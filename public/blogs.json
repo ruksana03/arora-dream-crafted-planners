@@ -1,0 +1,38 @@
+[
+    {
+      "id": 1,
+      "img": "https://i.ibb.co/dtrgQ8L/Film-Festival-Card.jpg",
+      "title": "Tips for Successful Event Planning",
+      "date": "2023-10-10",
+      "description": "Learn the essential tips and strategies for organizing successful cultural events that leave a lasting impact on attendees."
+    },
+    {
+      "id": 2,
+      "img": "https://i.ibb.co/smS2Xp2/pexels-matheus-bertelli-3321793.jpg",
+      "title": "The Importance of Cultural Diversity in Events",
+      "date": "2023-09-25",
+      "description": "Explore how embracing cultural diversity can enhance the richness and inclusivity of your event experiences."
+    },
+    {
+      "id": 3,
+      "img": "https://i.ibb.co/346t3cn/pexels-pixabay-433452.jpg",
+      "title": "Innovative Ideas for Creative Event Themes",
+      "date": "2023-08-15",
+      "description": "Discover unique and creative event theme ideas that will captivate your audience and make your events memorable."
+    },
+    {
+      "id": 4,
+      "img": "https://i.ibb.co/jhstYrQ/pexels-ivan-57980.jpg",
+      "title": "Effective Marketing Strategies for Event Promotion",
+      "date": "2023-07-02",
+      "description": "Learn proven marketing techniques to promote your cultural events and reach a wider audience."
+    },
+    {
+      "id": 5,
+      "img": "https://i.ibb.co/6rxx2xH/pexels-fu-zhichao-587741.jpg",
+      "title": "The Role of Technology in Modern Event Planning",
+      "date": "2023-06-18",
+      "description": "Explore how the latest technological advancements can streamline event planning and enhance the attendee experience."
+    }
+  ]
+  
