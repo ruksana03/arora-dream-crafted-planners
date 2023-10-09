@@ -16,20 +16,20 @@ const AuthProvider = ({ children }) => {
     // google login
     const googleLogin = () => {
         setLoading(true)
-        return signInWithPopup(auth, googleProvider)
+        return signInWithPopup(auth, googleProvider);
     }
 
     // Create user & sign up
     const createUser = (email, password) => {
         setLoading(true)
-        return createUserWithEmailAndPassword(auth, email, password)
+        return createUserWithEmailAndPassword(auth, email, password);
     }
 
     // sign in
 
     const signIn = (email, password) => {
         setLoading(true)
-        return signInWithEmailAndPassword(auth, email, password)
+        return signInWithEmailAndPassword(auth, email, password);
     }
 
     // user profile manage

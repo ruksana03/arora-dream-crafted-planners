@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import SocialLogin from './SocialLogin';
 import useAuth from '../../Hooks/useAuth';
 import toast from 'react-hot-toast';
@@ -7,26 +7,38 @@ import JoinUsBanner from '../../Components/Banners/JoinUsBanner';
 
 const Register = () => {
 
-    const { createUser } = useAuth();
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        const name = e.target.name.value;
-        const email = e.target.email.value;
-        const img = e.target.img.value;
-        const password = e.target.password.value;
+    const { createUser ,handleUpdateProfile } = useAuth();
+    const navigate = useNavigate()
 
-        console.log(name,img)
+    const handleSubmit = (event) => {
+        event.preventDefault();
+        const name = event.target.name.value;
+        const email = event.target.email.value;
+        const img = event.target.img.value;
+        const password = event.target.password.value;
+
+        // console.log(name,img)
 
         // validation 
         if (password.length < 6 || !/[A-Z]/.test(password) || !/[!@#$%^&*()_+{}[\]:;<>,.?~\\-]/.test(password)) {
             toast.error('Password must be at least 6 characters and contain at least one capital letter and one special character');
-            return toast.success('Register Successfully')
+            return 
         }
 
         // creating a new user
-        createUser(email, password) 
-            .then(res => console.log(res.user))
-            .catch(err => console.log(err))
+        createUser(email, password)
+            .then(res => {
+                handleUpdateProfile(name, img)
+                    .then(() => {
+                        toast.success('User created successfully');
+                        navigate('/')
+
+                    })
+            })
+            .catch(error => {
+                toast.error('Error!!!!!!')
+            })
+
 
     }
     return (

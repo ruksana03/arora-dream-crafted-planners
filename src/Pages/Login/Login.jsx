@@ -1,17 +1,18 @@
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import SocialLogin from './SocialLogin';
 import useAuth from '../../Hooks/useAuth';
-import JoinUsBanner from '../../Components/Banners/JoinUsBanner';
+// import JoinUsBanner from '../../Components/Banners/JoinUsBanner';
 import toast from 'react-hot-toast';
 
 const Login = () => {
+    const navigate = useNavigate()
     const { signIn } = useAuth();
 
-    const handleSubmit = (e) => {
-        e.preventDefault();
+    const handleSubmit = (event) => {
+        event.preventDefault();
 
-        const email = e.target.email.value;
-        const password = e.target.password.value;
+        const email = event.target.email.value;
+        const password = event.target.password.value;
 
         // validation 
         if (password.length < 6 || !/[A-Z]/.test(password) || !/[!@#$%^&*()_+{}[\]:;<>,.?~\\-]/.test(password)) {
@@ -21,8 +22,13 @@ const Login = () => {
 
         // creating a new user
         signIn(email, password)
-            .then(res => console.log(res.user))
-            .catch(err => console.log(err))
+            .then(res => {
+                toast.success('User logged in successfully');
+                navigate('/')
+            })
+            .catch(error => {
+                toast.error(error.message)
+            })
 
     }
 
