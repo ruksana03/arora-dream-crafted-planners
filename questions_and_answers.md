@@ -18,9 +18,9 @@ console.log(greetign);
 <details><summary><b>Answer : B</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer: B
 
-<i> Instead of greeting, here console greetign, which is not a defined variable.</i>
+<i> Instead of greeting, here console greetign, which is not  defined variable.</i>
 
 </p>
 </details>
@@ -43,9 +43,9 @@ sum(1, "2");
 <details><summary><b>C</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer: C
 
-<i>Because 2 is a string</i>
+<i>Because sum take two perameter here a=1 which is number but b=2 which is a string</i>
 
 </p>
 </details>
@@ -69,9 +69,9 @@ console.log(food);
 <details><summary><b>A</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer: A
 
-<i>Write your explanation here</i>
+<i>This assignment only set the value of the favoriteFood property info object. It can not chenge the food array.</i>
 
 </p>
 </details>
@@ -94,9 +94,9 @@ console.log(sayHi());
 <details><summary><b>B</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer: B
 
-<i>the sayHi function want a argument name, but when  call sayHi() without providing any arguments, it results in name being undefined</i>
+<i>The sayHi function want a argument name, but when  call sayHi() without providing any arguments, it results in name is undefined</i>
 
 </p>
 </details>
@@ -124,7 +124,7 @@ console.log(count);
 
 #### Answer: ?
 
-<i> the forEach method  will exicute through the nums array and exicute the callback function for each element</i>
+<i> The for each methord evalute through out the nums array . when it get 0 it evalute as false. so num dose not incriment. so 1,2,3 will evalute as true and  so the ans will be 3 </i>
 
 </p>
 </details>

@@ -133,7 +133,7 @@ const Navbar = () => {
         </>
 
     return (
-        <div className={`px-28 py-2 sticky z-10 text-white ${isScrolled ? "bg-black  lg:bg-[#333333]" : "bg-black lg:bg-transparent"}`}>
+        <div className={`px-4 sm:px-10 lg:px-28 py-2 sticky z-10 text-white ${isScrolled ? "bg-black lg:bg-[#333333]" : "bg-black lg:bg-transparent"}`}>
             <div className="navbar">
                 <div className="navbar-start">
                     <div className="dropdown">
@@ -194,10 +194,10 @@ const Navbar = () => {
 
                             </ul>
                         </div>
-                            : <button
-                                className="text-white font-extrabold border-4 border-[#FFBE30] rounded-full p-3">
-                                <AiOutlineUser></AiOutlineUser>
-                            </button>
+                            : <Link to='/login'><button
+                            className="text-white font-extrabold border-4 border-[#FFBE30] rounded-full p-3">
+                            <AiOutlineUser></AiOutlineUser>
+                        </button></Link>
 
                     }
 

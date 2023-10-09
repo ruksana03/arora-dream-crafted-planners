@@ -14,11 +14,7 @@ const Login = () => {
         const email = event.target.email.value;
         const password = event.target.password.value;
 
-        // validation 
-        if (password.length < 6 || !/[A-Z]/.test(password) || !/[!@#$%^&*()_+{}[\]:;<>,.?~\\-]/.test(password)) {
-            toast.error('Password must be at least 6 characters and contain at least one capital letter and one special character');
-            return toast.success('Login successfully')
-        }
+      
 
         // creating a new user
         signIn(email, password)
@@ -27,7 +23,7 @@ const Login = () => {
                 navigate('/')
             })
             .catch(error => {
-                toast.error(error.message)
+                toast.error('Error!!! Email Password is not matched ')
             })
 
     }

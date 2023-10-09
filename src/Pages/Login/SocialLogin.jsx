@@ -16,7 +16,7 @@ const SocialLogin = () => {
                 navigate('/')
             })
             .catch(error => {
-                toast.error(error.message)
+                toast.error('Error!!!1')
             })
     }
     
