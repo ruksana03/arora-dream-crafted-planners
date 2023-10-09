@@ -1,12 +1,16 @@
 import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
-import { AiOutlineSearch, AiOutlineUser, AiOutlineClose} from "react-icons/ai";
+import { AiOutlineSearch, AiOutlineUser, AiOutlineClose } from "react-icons/ai";
+import Login from "../../Pages/Login/Login";
+import useAuth from "../../Hooks/useAuth";
 
 
 const Navbar = () => {
 
     const [isSearchVisible, setSearchVisible] = useState(false);
     const [isLoginVisible, setLoginVisible] = useState(false);
+
+    const {user ,logOut} = useAuth()
 
     const toggleSearch = () => {
         setSearchVisible(!isSearchVisible);
@@ -62,7 +66,37 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <div className="navbar-end flex gap-3">
-                    <button className="text-white font-extrabold border-4 border-[#FFBE30] rounded-full p-3" onClick={toggleLogin}><AiOutlineUser></AiOutlineUser></button>
+                   {
+                       user?.email ? <div className="dropdown dropdown-end">
+                       <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
+                           <div className="w-10 rounded-full">
+                               <img src={user.photoURL} alt={user.displayName} />
+                           </div>
+                       </label>
+                       <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                           <li>
+                               <button className="btn btn-sm  btn-ghost">{user.displayName}</button>
+
+                           </li>
+                           <li>
+                               <button className="btn btn-sm  btn-ghost"
+                                   onClick={logOut}
+                               >Logout</button>
+
+                           </li>
+                       </ul>
+                   </div>
+                       :
+                       <Link to='/login'>
+                           <button className="btn btn-sm  btn-ghost">Login</button>
+                       </Link>
+                   }
+                        <button
+                            className="text-white font-extrabold border-4 border-[#FFBE30] rounded-full p-3"
+                            onClick={toggleLogin}>
+                            <AiOutlineUser></AiOutlineUser>
+                        </button>
+                  
                     <button className="text-white font-extrabold border-4 border-[#FFBE30] rounded-full p-3" onClick={toggleSearch}><AiOutlineSearch></AiOutlineSearch></button>
                     {isSearchVisible && (
                         <div className="absolute top-0 right-0 mt-12 mr-4 p-2 bg-white border border-gray-300 rounded shadow-lg">
@@ -73,10 +107,8 @@ const Navbar = () => {
                     {isLoginVisible && (
                         <div className="fixed top-0 left-0 w-full h-full bg-gray-800 bg-opacity-75 flex justify-center items-center">
                             <div className="bg-white p-4 rounded shadow-lg">
-                                {/* Your login content here */}
-                                <h2>Login Page</h2>
-                                {/* Add your login form or content */}
-                                <button className="text-6xl font-extrabold text-black" onClick={toggleLogin}><AiOutlineClose></AiOutlineClose></button>
+                                <button className="mt-12 text-2xl font-extrabold text-black" onClick={toggleLogin}><AiOutlineClose></AiOutlineClose></button>
+                                <Login></Login>
                             </div>
                         </div>
                     )}

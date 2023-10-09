@@ -9,6 +9,10 @@ import Gallery from "../Pages/Gallery/Gallery";
 import Contact from "../Pages/Contact/Contact";
 import AllServices from "../Pages/AllServices/AllServices";
 import ServiceDetails from "../Pages/ServiceDetails/ServiceDetails";
+import Login from "../Pages/Login/Login";
+import Register from "../Pages/Login/Register";
+import SocialLogin from "../Pages/Login/SocialLogin";
+import PrivateRoute from "../PrivateRoute/PrivateRoute";
 
 
 const Router = createBrowserRouter([
@@ -36,7 +40,7 @@ const Router = createBrowserRouter([
             },
             {
                 path:'/service/:id',
-                element:<ServiceDetails></ServiceDetails>,
+                element:<PrivateRoute><ServiceDetails></ServiceDetails></PrivateRoute>,
                 loader: () => fetch('../../public/services.json')
             },
             {
@@ -51,6 +55,18 @@ const Router = createBrowserRouter([
                 path:'/contact',
                 element:<Contact></Contact>
             },
+            {
+                path:'/login',
+                element:<Login></Login>
+            },
+            {
+                path:'/register',
+                element:<Register></Register>
+            },
+            {
+                path:'/social',
+                element:<SocialLogin></SocialLogin>
+            }
             
         ]
     }
