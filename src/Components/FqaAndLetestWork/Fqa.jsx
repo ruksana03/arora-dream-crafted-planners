@@ -12,7 +12,7 @@ import 'react-accessible-accordion/dist/fancy-example.css';
 const Fqa = () => {
     return (
 
-        <div className='mt-8' style={{ overflowY: 'auto', maxHeight: 'calc(100vh - 200px)' }}>
+        <div className='mt-8 w-full' style={{ overflowY: 'auto', maxHeight: 'calc(100vh - 200px)' }}>
             <Accordion>
                 <AccordionItem>
                     <AccordionItemHeading>

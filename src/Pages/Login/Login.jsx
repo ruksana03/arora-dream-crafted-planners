@@ -1,36 +1,38 @@
 import { Link } from 'react-router-dom';
 import SocialLogin from './SocialLogin';
 import useAuth from '../../Hooks/useAuth';
+import JoinUsBanner from '../../Components/Banners/JoinUsBanner';
+import toast from 'react-hot-toast';
 
 const Login = () => {
-const { signIn } = useAuth();
+    const { signIn } = useAuth();
 
-const handleSubmit = (e) => {
-    e.preventDefault();
-  
-    const email = e.target.email.value;
-    const password = e.target.password.value;
+    const handleSubmit = (e) => {
+        e.preventDefault();
 
-    // validation 
-    if (password.length < 6) {
-        toast.error('Password must be at least 6 characters');
-        return;
+        const email = e.target.email.value;
+        const password = e.target.password.value;
+
+        // validation 
+        if (password.length < 6 || !/[A-Z]/.test(password) || !/[!@#$%^&*()_+{}[\]:;<>,.?~\\-]/.test(password)) {
+            toast.error('Password must be at least 6 characters and contain at least one capital letter and one special character');
+            return toast.success('Login successfully')
+        }
+
+        // creating a new user
+        signIn(email, password)
+            .then(res => console.log(res.user))
+            .catch(err => console.log(err))
+
     }
 
-    // creating a new user
-    signIn(email, password) 
-        .then(res => console.log(res.user))
-        .catch(err => console.log(err))
-
-}
-
     return (
-        <>
-            <div className="hero min-h-screen bg-base-200">
-                <div className="hero-content flex-col lg:flex-row-reverse">
+        <div>
+            {/* <JoinUsBanner></JoinUsBanner> */}
+            <div className="hero min-h-screen bg-gradient-to-r from-[#FF5107] from-10% via-[#FF5107] via-30% to-[#FF9B23] to-90%">
+                <div className="hero-content flex-col my-20">
                     <div className="text-center lg:text-left">
-                        <h1 className="text-5xl font-bold">Login now!</h1>
-                        <p className="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+                        <h1 className="text-5xl font-bold text-white">Login now!</h1>
                     </div>
                     <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
                         <form onSubmit={handleSubmit} className="card-body">
@@ -38,19 +40,19 @@ const handleSubmit = (e) => {
                                 <label className="label">
                                     <span className="label-text">Email</span>
                                 </label>
-                                <input type="text" placeholder="email" className="input input-bordered" name='email'/>
+                                <input type="text" placeholder="email" className="input input-bordered" name='email' />
                             </div>
                             <div className="form-control">
                                 <label className="label">
                                     <span className="label-text">Password</span>
                                 </label>
-                                <input type="text" placeholder="password" className="input input-bordered" name='password'/>
+                                <input type="password" placeholder="password" className="input input-bordered" name='password' />
                                 <label className="label">
                                     <a href="#" className="label-text-alt link link-hover">Forgot password?</a>
                                 </label>
                             </div>
                             <div className="form-control mt-6 p-0">
-                                <button type='submit' className="btn btn-neutral">Login</button>
+                                <button type='submit'  className=" px-10 py-3 m-2 rounded-full font-bold bg-gradient-to-r from-[#FF5107] from-10% via-[#FF5107] via-30% to-[#FF9B23] to-90% w-full text-white">Login</button>
                             </div>
                             <label className="label">
                                 New here? <Link to="/register" className="label-text-alt link link-hover">Create an account</Link>
@@ -60,7 +62,7 @@ const handleSubmit = (e) => {
                     </div>
                 </div>
             </div>
-        </>
+        </div>
     );
 };
 

@@ -11,6 +11,7 @@ import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 
 const UpcommingEvents = () => {
     const [upcommingEvents, setUpcommingEvents] = useState([]);
+    const [slidesPerView, setSlidesPerView] = useState(4);
     // const [dataLength, setDataLength] = useState();
 
     useEffect(() => {
@@ -64,6 +65,18 @@ const UpcommingEvents = () => {
     }, [timeLeft]);
 
 
+    useEffect(() => {
+       
+        const screenWidth = window.innerWidth;
+    
+  
+        if (screenWidth >= 768 && screenWidth < 1024) {
+          setSlidesPerView(3); 
+        } else if (screenWidth < 768) {
+          setSlidesPerView(2); 
+        }
+      }, []);
+
     return (
         <div className="mx-28 my-6">
             <hr className="bg-gradient-to-r from-[#FF5107] from-10% via-[#FF5107] via-30% to-[#FF9B23] to-90% p-0.5 w-1/12" />
@@ -111,7 +124,7 @@ const UpcommingEvents = () => {
                     navigation={true}
                     modules={[Autoplay, Pagination, Navigation]}
                     className="mySwiper"
-                    slidesPerView={4}
+                    slidesPerView={slidesPerView}
                 >
                     {upcommingEvents.map((upcommingEvent) => (<SwiperSlide key={upcommingEvent.id}> <UpcommingEventCard key={upcommingEvent} upcommingEvent={upcommingEvent}></UpcommingEventCard> </SwiperSlide>))}
 

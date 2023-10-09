@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 
 
 const MissionVission = () => {
@@ -6,7 +7,7 @@ const MissionVission = () => {
             <div>
                 <h1 className="text-2xl text-[#757575] my-8">We are Arora Group</h1>
                 <h1 className="text-5xl text-[#333333]"><span className="font-bold my-8">No.1</span> Events Management</h1>
-                <button className="my-4 btn bg-gradient-to-r from-[#FF5107] from-10% via-[#FF5107] via-30% to-[#FF9B23] to-90% text-white text-sm rounded-full px-10 font-bold">GET STARTEd!</button>
+             <Link to='/login'><button className="my-4 btn bg-gradient-to-r from-[#FF5107] from-10% via-[#FF5107] via-30% to-[#FF9B23] to-90% text-white text-sm rounded-full px-10 font-bold">GET STARTED!</button></Link>
             </div>
             <div className="m-4">
                 <hr className="bg-gradient-to-r from-[#FF5107] from-10% via-[#FF5107] via-30% to-[#FF9B23] to-90% p-0.5 w-1/3" />

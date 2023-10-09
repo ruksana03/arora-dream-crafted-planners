@@ -7,7 +7,10 @@ import { Toaster } from "react-hot-toast";
 const MainLayout = () => {
     return (
         <div>
-            <Navbar></Navbar>
+            <div className="lg:fixed top-0 left-0 w-full z-50">
+                <Navbar></Navbar>
+            </div>
+            
             <Outlet></Outlet>
             <Footer></Footer>
             <Toaster/>

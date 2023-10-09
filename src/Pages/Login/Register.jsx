@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import SocialLogin from './SocialLogin';
 import useAuth from '../../Hooks/useAuth';
 import toast from 'react-hot-toast';
+import JoinUsBanner from '../../Components/Banners/JoinUsBanner';
 
 
 const Register = () => {
@@ -17,9 +18,9 @@ const Register = () => {
         console.log(name,img)
 
         // validation 
-        if (password.length < 6) {
-            toast.error('Password must be at least 6 characters');
-            return;
+        if (password.length < 6 || !/[A-Z]/.test(password) || !/[!@#$%^&*()_+{}[\]:;<>,.?~\\-]/.test(password)) {
+            toast.error('Password must be at least 6 characters and contain at least one capital letter and one special character');
+            return toast.success('Register Successfully')
         }
 
         // creating a new user
@@ -29,12 +30,12 @@ const Register = () => {
 
     }
     return (
-        <>
-            <div className="hero min-h-screen bg-base-200">
-                <div className="hero-content flex-col lg:flex-row-reverse">
+        <div>
+            {/* <JoinUsBanner></JoinUsBanner> */}
+            <div className="hero min-h-screen bg-gradient-to-r from-[#FF5107] from-10% via-[#FF5107] via-30% to-[#FF9B23] to-90%">
+                <div className="hero-content flex-col my-20">
                     <div className="text-center lg:text-left">
-                        <h1 className="text-5xl font-bold">Register now!</h1>
-                        <p className="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+                        <h1 className="text-5xl font-bold text-white">Register now!</h1>
                     </div>
                     <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
                         <form onSubmit={handleSubmit} className="card-body">
@@ -60,10 +61,10 @@ const Register = () => {
                                 <label className="label">
                                     <span className="label-text">Password</span>
                                 </label>
-                                <input type="text" placeholder="password" className="input input-bordered" name='password' />
+                                <input type="password" placeholder="password" className="input input-bordered" name='password' />
                             </div>
                             <div className="form-control mt-6 p-0">
-                                <button type='submit' className="btn btn-neutral">Register</button>
+                                <button type='submit' className=" px-10 py-3 m-2 rounded-full font-bold bg-gradient-to-r from-[#FF5107] from-10% via-[#FF5107] via-30% to-[#FF9B23] to-90% w-full text-white">Register</button>
                             </div>
                             <label className="label">
                                 Have an account? <Link to="/login" className="label-text-alt link link-hover">Please Login</Link>
@@ -73,7 +74,7 @@ const Register = () => {
                     </div>
                 </div>
             </div>
-        </>
+        </div>
     );
 };
 

@@ -17,7 +17,7 @@ const Services = () => {
 
 
     return (
-        <div className="mx-28 my-10">
+        <div className="mx-4 md:mx-12 lg:mx-28 my-10">
             <hr className="bg-gradient-to-r from-[#FF5107] from-10% via-[#FF5107] via-30% to-[#FF9B23] to-90% p-0.5 w-1/12" />
             <div className="my-10 text-left">
                 <h2 className="text-3xl text-[#757575]  font-normal ">Arora Cultural <br /> <span className="text-5xl text-black font-bold">Event</span> <span className="text-5xl"> Services</span></h2>

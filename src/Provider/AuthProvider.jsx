@@ -1,51 +1,69 @@
 import { createContext, useEffect, useState } from "react";
-import { GoogleAuthProvider, createUserWithEmailAndPassword, onAuthStateChanged, signInWithEmailAndPassword, signInWithPopup, signOut } from "firebase/auth";
+import { GoogleAuthProvider, createUserWithEmailAndPassword, onAuthStateChanged, signInWithEmailAndPassword, signInWithPopup, signOut, updateProfile } from "firebase/auth";
 import { auth } from "../Config/FirebaseConfig";
 
 export const AuthContext = createContext(null);
+
+
 const googleProvider = new GoogleAuthProvider();
 
 const AuthProvider = ({ children }) => {
-const [user, setUser] = useState({})
+
+    const [user, setUser] = useState({})
+    const [loading, setLoading] = useState(true)
 
 
     // google login
     const googleLogin = () => {
+        setLoading(true)
         return signInWithPopup(auth, googleProvider)
     }
 
-   // Create user & sign up
-   const createUser = (email , password) => {
-    return createUserWithEmailAndPassword(auth, email, password)
-   }
+    // Create user & sign up
+    const createUser = (email, password) => {
+        setLoading(true)
+        return createUserWithEmailAndPassword(auth, email, password)
+    }
 
-// sign in
+    // sign in
 
-const signIn = (email , password) => {
-    return signInWithEmailAndPassword(auth, email, password)
-}
+    const signIn = (email, password) => {
+        setLoading(true)
+        return signInWithEmailAndPassword(auth, email, password)
+    }
 
-//sign Out 
-const logOut = () => {
-    return signOut(auth)
-}
+    // user profile manage
 
-//get user && observer
+    const handleUpdateProfile = (name, photo) => {
+        return updateProfile(auth.currentUser, {
+            displayName: name, photoURL: photo
+        })
+    }
 
-useEffect(()=>{
-    onAuthStateChanged(auth, (user) => {
-       setUser(user)
-      });
-},[])
+    //sign Out 
+    const logOut = () => {
+        return signOut(auth)
+    }
 
-console.log(user)
+    //get user && observer
+
+    useEffect(() => {
+        onAuthStateChanged(auth, (user) => {
+            setUser(user)
+            setLoading(false)
+        });
+    }, [])
+
+ 
 
     const authentications = {
         googleLogin,
         createUser,
         signIn,
         logOut,
-        user
+        user,
+        loading,
+        handleUpdateProfile
     }
 
     return (

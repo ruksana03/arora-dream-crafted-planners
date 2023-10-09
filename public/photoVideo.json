@@ -1,0 +1,163 @@
+[
+    {
+      "id": 1,
+      "type": "photo",
+      "img": "https://i.ibb.co/7NNdPxf/pexels-designecologist-2526105.jpg",
+      "name": "Event Photo 1",
+      "place": "Event Location 1",
+      "description": "Description for Event Photo 1"
+    },
+    {
+      "id": 2,
+      "type": "video",
+      "img": "https://i.ibb.co/7NNdPxf/pexels-designecologist-2526105.jpg",
+      "name": "Event Video 1",
+      "place": "Event Location 1",
+      "description": "Description for Event Video 1"
+    },
+    {
+      "id": 3,
+      "type": "photo",
+      "img": "https://i.ibb.co/NmgJB31/pexels-expect-best-1243337.jpg",
+      "name": "Event Photo 2",
+      "place": "Event Location 2",
+      "description": "Description for Event Photo 2"
+    },
+    {
+      "id": 4,
+      "type": "video",
+      "img": "https://i.ibb.co/QFCJKwV/pexels-rayn-l-3163677.jpg",
+      "name": "Event Video 2",
+      "place": "Event Location 2",
+      "description": "Description for Event Video 2"
+    },
+    {
+      "id": 5,
+      "type": "photo",
+      "img": "https://i.ibb.co/QFCJKwV/pexels-rayn-l-3163677.jpg",
+      "name": "Event Photo 3",
+      "place": "Event Location 3",
+      "description": "Description for Event Photo 3"
+    },
+    {
+      "id": 6,
+      "type": "video",
+      "img": "https://i.ibb.co/QFCJKwV/pexels-rayn-l-3163677.jpg",
+      "name": "Event Video 3",
+      "place": "Event Location 3",
+      "description": "Description for Event Video 3"
+    },
+    {
+      "id": 7,
+      "type": "photo",
+      "img": "https://i.ibb.co/Yy9xKYy/pexels-rdne-stock-project-7249196.jpg",
+      "name": "Event Photo 4",
+      "place": "Event Location 4",
+      "description": "Description for Event Photo 4"
+    },
+    {
+      "id": 8,
+      "type": "video",
+      "img": "https://i.ibb.co/QFCJKwV/pexels-rayn-l-3163677.jpg",
+      "name": "Event Video 4",
+      "place": "Event Location 4",
+      "description": "Description for Event Video 4"
+    },
+    {
+      "id": 9,
+      "type": "photo",
+      "img": "https://i.ibb.co/5LfMqGf/pexels-iskcon-tv-dhaka-12880651.jpg",
+      "name": "Event Photo 5",
+      "place": "Event Location 5",
+      "description": "Description for Event Photo 5"
+    },
+    {
+      "id": 10,
+      "type": "video",
+      "img": "https://i.ibb.co/QFCJKwV/pexels-rayn-l-3163677.jpg",
+      "name": "Event Video 5",
+      "place": "Event Location 5",
+      "description": "Description for Event Video 5"
+    },
+    {
+      "id": 11,
+      "type": "photo",
+      "img": "https://i.ibb.co/VMKLGSz/pexels-wendy-wei-2342400.jpg",
+      "name": "Event Photo 6",
+      "place": "Event Location 6",
+      "description": "Description for Event Photo 6"
+    },
+    {
+      "id": 12,
+      "type": "video",
+      "img": "https://i.ibb.co/Kbw6J4S/pexels-lukas-306046.jpg",
+      "name": "Event Video 6",
+      "place": "Event Location 6",
+      "description": "Description for Event Video 6"
+    },
+    {
+      "id": 13,
+      "type": "photo",
+      "img": "https://i.ibb.co/V2DMdZY/pexels-pixabay-302100.jpg",
+      "name": "Event Photo 7",
+      "place": "Event Location 7",
+      "description": "Description for Event Photo 7"
+    },
+    {
+      "id": 14,
+      "type": "video",
+      "img": "https://i.ibb.co/QFCJKwV/pexels-rayn-l-3163677.jpg",
+      "name": "Event Video 7",
+      "place": "Event Location 7",
+      "description": "Description for Event Video 7"
+    },
+    {
+      "id": 15,
+      "type": "photo",
+      "img": "https://i.ibb.co/CWhpz9g/pexels-brett-sayles-6424244.jpg",
+      "name": "Event Photo 8",
+      "place": "Event Location 8",
+      "description": "Description for Event Photo 8"
+    },
+    {
+      "id": 16,
+      "type": "video",
+      "img": "https://i.ibb.co/QFCJKwV/pexels-rayn-l-3163677.jpg",
+      "name": "Event Video 8",
+      "place": "Event Location 8",
+      "description": "Description for Event Video 8"
+    },
+    {
+      "id": 17,
+      "type": "photo",
+      "img": "https://i.ibb.co/cC3WGkZ/pexels-adhwaith-chandran-15167464.jpg",
+      "name": "Event Photo 9",
+      "place": "Event Location 9",
+      "description": "Description for Event Photo 9"
+    },
+    {
+      "id": 18,
+      "type": "video",
+      "img": "https://i.ibb.co/QFCJKwV/pexels-rayn-l-3163677.jpg",
+      "name": "Event Video 9",
+      "place": "Event Location 9",
+      "description": "Description for Event Video 9"
+    },
+    {
+      "id": 19,
+      "type": "photo",
+      "img": "https://i.ibb.co/RgRzB7p/pexels-rayn-l-3163677.jpg",
+      "name": "Event Photo 10",
+      "place": "Event Location 10",
+      "description": "Description for Event Photo 10"
+    },
+    {
+      "id": 20,
+      "type": "video",
+      "img": "https://i.ibb.co/RgRzB7p/pexels-rayn-l-3163677.jpg",
+      "name": "Event Video 10",
+      "place": "Event Location 10",
+      "description": "Description for Event Video 10"
+    }
+  ]
+  

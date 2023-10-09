@@ -13,6 +13,8 @@ import Login from "../Pages/Login/Login";
 import Register from "../Pages/Login/Register";
 import SocialLogin from "../Pages/Login/SocialLogin";
 import PrivateRoute from "../PrivateRoute/PrivateRoute";
+import BlogDetails from "../Pages/BlogDetails/BlogDetails";
+import JoinUs from "../Pages/JoinUs/JoinUs";
 
 
 const Router = createBrowserRouter([
@@ -31,11 +33,11 @@ const Router = createBrowserRouter([
             },
             {
                 path:'/events',
-                element:<Events></Events>
+                element:<PrivateRoute><Events></Events></PrivateRoute>
             },
             {
                 path:'/allservices',
-                element:<AllServices></AllServices>,
+                element:<PrivateRoute><AllServices></AllServices></PrivateRoute>,
                 loader: () => fetch('../../public/services.json')
             },
             {
@@ -44,12 +46,17 @@ const Router = createBrowserRouter([
                 loader: () => fetch('../../public/services.json')
             },
             {
+                path:'/blog/:id',
+                element:<PrivateRoute><BlogDetails></BlogDetails></PrivateRoute>,
+                loader: () => fetch('../../public/blogs.json')
+            },
+            {
                 path:'/blogs',
-                element:<Blogs></Blogs>
+                element:<PrivateRoute><Blogs></Blogs></PrivateRoute>
             },
             {
                 path:'/gallery',
-                element:<Gallery></Gallery>
+                element:<PrivateRoute><Gallery></Gallery></PrivateRoute>
             },
             {
                 path:'/contact',
@@ -58,6 +65,10 @@ const Router = createBrowserRouter([
             {
                 path:'/login',
                 element:<Login></Login>
+            },
+            {
+                path:'/joinUs',
+                element:<JoinUs></JoinUs>
             },
             {
                 path:'/register',
