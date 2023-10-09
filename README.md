@@ -18,3 +18,4 @@ Currently, two official plugins are available:
 - Offer various ticket types, such as VIP, early bird, or group discounts, and allow event organizers to set pricing and availability.
 - A visual calendar displaying all upcoming events, making it easy for users to plan their schedules.
 - Allow attendees to leave reviews and ratings for events they've attended, helping others make informed decisions.
+
