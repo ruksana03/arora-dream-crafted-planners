@@ -38,17 +38,17 @@ const Router = createBrowserRouter([
             {
                 path:'/allservices',
                 element:<PrivateRoute><AllServices></AllServices></PrivateRoute>,
-                loader: () => fetch('../../public/services.json')
+                loader: () => fetch('/services.json')
             },
             {
                 path:'/service/:id',
                 element:<PrivateRoute><ServiceDetails></ServiceDetails></PrivateRoute>,
-                loader: () => fetch('../../public/services.json')
+                loader: () => fetch('/services.json')
             },
             {
                 path:'/blog/:id',
                 element:<PrivateRoute><BlogDetails></BlogDetails></PrivateRoute>,
-                loader: () => fetch('../../public/blogs.json')
+                loader: () => fetch('/blogs.json')
             },
             {
                 path:'/blogs',
